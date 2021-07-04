@@ -1,4 +1,4 @@
-## importing pands
+## importing pandas
 
 import pandas as pd
 
