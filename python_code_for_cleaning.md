@@ -22,7 +22,7 @@ df.columns=df.columns.str.replace(' ', '_')
 
 df.rename(columns={'Salary_Estimate':'Salary_Estimate_USD'}, inplace=True)
 
-## removing dollar sign from Salry_Estimate_USD column
+## removing dollar sign from Salary_Estimate_USD column
 
 df.Salary_Estimate_USD = df.Salary_Estimate_USD.str.replace('$', '', regex=True)
 
@@ -54,7 +54,7 @@ df.Number_of_Emlpoyees = df.Number_of_Emlpoyees.str.replace('employees', '')
 
 df[['Salary_Estimate_USD', 'Salary_Estimate_Source']]=df.Salary_Estimate_USD.str.split(' ', n=1, expand=True)
 
-## removing parenthesis from Salary_Estimate_Source column
+## removing parentheses from Salary_Estimate_Source column
 
 df.Salary_Estimate_Source = df.Salary_Estimate_Source.str.replace('(','')
 df.Salary_Estimate_Source = df.Salary_Estimate_Source.str.replace(')','')
